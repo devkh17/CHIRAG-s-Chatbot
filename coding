@@ -1,0 +1,69 @@
+<!--created by DEV KHANDELWAL (CHIRAG)-->
+
+<html>
+<head>
+<!--Design warthalab-->
+<p style="color:black" style="font-size:50%">
+<script>
+know = {
+
+"Hello" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Hi there!",
+"hello" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Hi there!",
+"HELLO" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Hi there!",
+"Hi" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Hi there!",
+"hi" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Hi there!",
+"HI" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Hi there!",
+"Who are you?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am CHIRAG's Assistant",
+"How are you?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am Fine",
+"How old are you?" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp I am infinity in age",
+"tu madarchod hai" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp teri maa ki ch#t",
+"can i get domain of your website" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Yes sure :) here is this- https://www.bit.ly/its_ENZO",
+"who created you" :"&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Your friend CHIRAG has created me ;)",
+"who is your boyfriend" : "&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Your friend CHIRAG is my CRUSH;)",
+
+
+
+
+
+};
+
+function talk() {
+var user = document.getElementById("userBox").value;
+document.getElementById("userBox").value= "";
+document.getElementById("chatLog").innerHTML += user+"<br>";
+
+if (user in know) {
+document.getElementById("chatLog").innerHTML += know[user] + "<br>";
+} else 
+
+{
+document.getElementById("chatLog").innerHTML += "I don't understand... <br>";
+}
+}
+
+
+
+
+
+</script>
+
+
+
+</head>
+<center>
+<h1 style="color:red"><p style="background-color:white">CHATBOT of CHIRAG</h1><br>
+
+
+<body style="background-color:white">
+
+
+<h2 style="color:white"><p id="chatLog" style="background-color:red"> </p>
+
+<input id="userBox" type="text" type="submit" onkeydown="if(event.keyCode == 13) {talk()}">
+
+
+</body>
+
+
+
+</html>
